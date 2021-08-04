@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<p>{{pensionDetail.pan}}
+</p>
+<div class="form-group">
+    <label>Pensioner Name:</label>
+    <p class="form-control is-valid">{{pensionDetail.name}}</p>					
+</div>
+
+<div class="form-group">
+    <label>Pensioner PAN:</label>
+    <p class="form-control is-valid">{{pensionDetail.pan}}</p>					
+</div>
+<div class="form-group">
+    <label>Pension Type:</label>
+    <p class="form-control is-valid">{{pensionDetail.pensionType}}</p>					
+</div>
+<div class="form-group">
+    <label>Pensioner DOB:</label>
+    <p class="form-control is-valid">{{pensionDetail.dateOfBirth}}</p>					
+</div>
+<div class="form-group">
+    <label>Pension Amount:</label>
+    <p class="form-control">{{pensionDetail.pensionAmount}}</p>
+</div>
+    <form method="GET" (submit)="onSubmit()" >
+        <input id="verifyBtn" name="verify" class="btn btn-dark"
+            style="cursor: grab;" type="submit" value="Disburse Pension" />
+    <form>
